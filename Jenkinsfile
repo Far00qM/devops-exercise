@@ -8,7 +8,7 @@ pipeline {
       }
     }
     
-    stage('Install dependencies') {
+    stage('Build docker iamge') {
       steps {
         sh 'sudo docker build -t nodejs . '
       }
