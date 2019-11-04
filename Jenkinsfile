@@ -4,6 +4,7 @@ pipeline {
       registry = "farooqinfoeng/nodejscicd"
       registryCredential = 'dockerhub'
       dockerImage = ''
+  }
   stages {
         
     stage('Cloning Git') {
