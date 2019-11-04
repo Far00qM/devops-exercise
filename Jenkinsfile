@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+      registry = "farooqinfoeng/nodejscicd"
+      registryCredential = 'dockerhub'
+      dockerImage = ''
   stages {
         
     stage('Cloning Git') {
